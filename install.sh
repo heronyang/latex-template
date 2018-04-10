@@ -10,6 +10,11 @@ function install_basictex {
     echo "Install basictex"
     brew tap caskroom/cask
     brew cask install basictex
+    sudo tlmgr update --self
+    sudo tlmgr install collection-fontsrecommended
+    sudo tlmgr install biblatex
+    sudo tlmgr install logreq
+    sudo tlmgr install xstring
 }
 
 function download_ieeecof {

@@ -1,4 +1,34 @@
-\documentclass{article}
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{paper}
+
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins
+
+\title{\LARGE \bf
+    This is Title
+}
+
+\author{Heron Yang$^{1}$
+    \thanks{*This work was not supported by any organization}% <-this % stops a space
+    \thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science, University of Twente, 7500 AE Enschede, The Netherlands
+    {\tt\small heronyang at cmu.edu}}%
+}
+
 \begin{document}
-Hello World
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{INTRODUCTION}
+
+\cite{briggs1925design}
+
+\printbibliography
+
 \end{document}

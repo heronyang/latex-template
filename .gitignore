@@ -1,4 +1,10 @@
-ieeeconf.cls
+*.cls
 *.pdf
 *.aux
 *.log
+*-blx.bib
+*.bbl
+*.bib
+*.blg
+*.run.xml
+.DS_Store
