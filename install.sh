@@ -27,16 +27,16 @@ function download_ieeecof {
 }
 
 function main {
-	if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
         echo "Unsupported OS"
-	elif [[ "$OSTYPE" == "darwin"* ]]; then
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
         install_brew
         install_basictex
         install_tool
         download_ieeecof
-	else
+    else
         echo "Unsupported OS"
-	fi
+    fi
 }
 
 main "$@"
