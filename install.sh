@@ -17,6 +17,10 @@ function install_basictex {
     sudo tlmgr install xstring
 }
 
+function install_tool {
+    brew install entr
+}
+
 function download_ieeecof {
     echo "Download ieeeconf.cls"
     curl "http://css.paperplaza.net/conferences/support/files/ieeeconf.cls" -o ieeeconf.cls
@@ -28,6 +32,7 @@ function main {
 	elif [[ "$OSTYPE" == "darwin"* ]]; then
         install_brew
         install_basictex
+        install_tool
         download_ieeecof
 	else
         echo "Unsupported OS"
